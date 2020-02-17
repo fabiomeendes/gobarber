@@ -1,11 +1,11 @@
-import { Router } from "express";
+import { Router } from 'express';
 
 const routes = new Router();
 
-routes.get("/", (req, res) => {
-  return res.json({
-    message: "Hello Fabio!"
-  });
-});
+routes.get('/', (req, res) =>
+  res.json({
+    message: 'Hello Fabio!',
+  })
+);
 
 export default routes;
